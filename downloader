@@ -1,0 +1,9 @@
+#!/bin/bash
+# generates ids and downloads imgur images repeatedly 
+
+cd images
+
+while true
+do
+        wget "https://i.imgur.com/$(../id)s.png"
+done

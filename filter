@@ -1,0 +1,12 @@
+#!/bin/bash
+# filters out images that don't actually exist in imgur
+# it dedects those images are they're the same boilerplate image
+# made by imgur and it's always 503 bytes, there is a posiblity that
+# it's not the same image and it's an actual image that happens to be 503 bytes
+
+files=$(ls -l ./images | grep 503 | awk '{print $9}')
+
+for file in $files
+do
+        rm "./images/$file"
+done

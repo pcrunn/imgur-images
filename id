@@ -1,0 +1,14 @@
+#!/bin/python3
+"""
+this script generates a random imgur image id
+"""
+
+import random
+
+characters = list('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789')
+id = ''
+
+for i in range(5):
+    id = id + random.choice(characters)
+
+print(id)
