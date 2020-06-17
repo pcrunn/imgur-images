@@ -5,5 +5,5 @@ cd images
 
 while true
 do
-        wget "https://i.imgur.com/$(../id)s.png"
+        wget "https://i.imgur.com/$(../id).png"
 done
